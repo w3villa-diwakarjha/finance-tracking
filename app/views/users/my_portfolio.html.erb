@@ -1,0 +1,14 @@
+<h1>My Portfolio</h1>
+
+
+<div class="search-area">
+    <%=render 'stocks/search'%>
+</div>
+<div id="results">
+
+</div>
+
+<%if !@tracked_stocks.empty? %>
+<%=render 'stocks/list'%>
+<%end %>
+
